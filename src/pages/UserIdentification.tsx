@@ -24,9 +24,9 @@ export function UserIdentification() {
   const [name, setName] = useState<string>();
 
   function handleSubmit() {
-    if (isFiled) {
+    // if (isFiled) {
       navigation.navigate("Confirmation");
-    }
+    // }
   }
 
   function handleInputBlur() {

@@ -1,5 +1,5 @@
 import React from "react";
-import { Text, View } from "react-native";
+import { StatusBar, Text, View } from "react-native";
 import { Welcome } from "./src/pages/welcome";
 import { UserIdentification } from "./src/pages/UserIdentification";
 import Routes from "./src/routes";
@@ -20,5 +20,10 @@ export default function App() {
     return <AppLoading />;
   }
 
-  return <Routes />;
+  return (
+    <>
+      <StatusBar barStyle="dark-content" />
+      <Routes />
+    </>
+  );
 }
